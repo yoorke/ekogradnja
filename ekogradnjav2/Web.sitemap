@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="/" title="POČETNA" description="POČETNA" xmlns="">
+    <siteMapNode url="/o-nama" title="O NAMA" description="O NAMA" />
+    <siteMapNode url="/proizvodni-program" title="PROIZVODNI PROGRAM" description="PROIZVODNI PROGRAM">
+      <siteMapNode url="/betonska-galanterija" title="Betonska galanterija" description="Betonska galanterija">
+        <siteMapNode url="/betonska-galanterija/behaton-ploce-1" title="Behaton" description="Behaton" />
+        <siteMapNode url="/betonska-galanterija/lepeza-2" title="Lepeza" description="Lepeza" />
+        <siteMapNode url="/betonska-galanterija/olimpija-3" title="Olimpija" description="Olimpija" />
+        <siteMapNode url="/betonska-galanterija/ploca-10x20-6" title="Ploča 10x20" description="Ploča 10x20" />
+        <siteMapNode url="/betonska-galanterija/ploca-15x30-7" title="Ploča 15x30" description="Ploča 15x30" />
+        <siteMapNode url="/betonska-galanterija/ploca-20x20-8" title="Ploča 20x20" description="Ploča 20x20" />
+        <siteMapNode url="/betonska-galanterija/ploca-20x30-9" title="Ploča 20x30" description="Ploča 20x30" />
+        <siteMapNode url="/betonska-galanterija/ploca-30x30-10" title="Ploča 30x30" description="Ploča 30x30" />
+        <siteMapNode url="/betonska-galanterija/raster-11" title="Raster" description="Raster" />
+        <siteMapNode url="/betonska-galanterija/romb-4" title="Romb" description="Romb" />
+        <siteMapNode url="/betonska-galanterija/setougao-5" title="Šestougao" description="Šestougao" />
+        <siteMapNode url="/betonska-galanterija/akropol-32" title="Akropol" description="Akropol" />
+        <siteMapNode url="/betonska-galanterija/nostalit-31" title="Nostalit" description="Nostalit" />
+        <siteMapNode url="/betonska-galanterija/ploca-25x50-34" title="Ploča 25x50" description="Ploča 25x50" />
+        <siteMapNode url="/betonska-galanterija/ploca-50x50-33" title="Ploča 50x50" description="Ploča 50x50" />
+      </siteMapNode>
+      <siteMapNode url="/ivicnjaci" title="Ivičnjaci" description="Ivičnjaci">
+        <siteMapNode url="/ivicnjaci/ivicnjak-10x12-17" title="Ivičnjak 10x12" description="Ivičnjak 10x12" />
+        <siteMapNode url="/ivicnjaci/ivicnjak-12x18-12" title="Ivičnjak 12x18" description="Ivičnjak 12x18" />
+        <siteMapNode url="/ivicnjaci/ivicnjak-18x24-13" title="Ivičnjak 18x24" description="Ivičnjak 18x24" />
+        <siteMapNode url="/ivicnjaci/ivicnjak-6x20-14" title="Ivičnjak 6x20" description="Ivičnjak 6x20" />
+        <siteMapNode url="/ivicnjaci/ivicnjak-6x25-15" title="Ivičnjak 6x25" description="Ivičnjak 6x25" />
+        <siteMapNode url="/ivicnjaci/ivicnjak-8x20-16" title="Ivičnjak 8x20" description="Ivičnjak 8x20" />
+        <siteMapNode url="/ivicnjaci/palisada-mendar-36" title="Palisada mendar" description="Palisada mendar" />
+        <siteMapNode url="/ivicnjaci/palisada-nostalit-35" title="Palisada nostalit" description="Palisada nostalit" />
+      </siteMapNode>
+      <siteMapNode url="/rigole" title="Rigole" description="Rigole">
+        <siteMapNode url="/rigole-i-kanalete/rigole-18" title="Rigole" description="Rigole" />
+        <siteMapNode url="/rigole-i-kanalete/ivicnjak-kanaleta-38" title="Ivičnjak kanaleta" description="Ivičnjak kanaleta" />
+        <siteMapNode url="/rigole-i-kanalete/kanaleta-37" title="Kanaleta" description="Kanaleta" />
+      </siteMapNode>
+      <siteMapNode url="/betonske-cevi-kanalizacioni-elementi" title="Betonske cevi i kanalizacioni elementi" description="Betonske cevi i kanalizacioni elementi">
+        <siteMapNode url="/betonske-cevi-kanalizacioni-elementi/betonske-cevi-19" title="Betonske cevi" description="Betonske cevi" />
+        <siteMapNode url="/betonske-cevi-kanalizacioni-elementi/drenazna-cev-22" title="Drenažna cev" description="Drenažna cev" />
+        <siteMapNode url="/betonske-cevi-kanalizacioni-elementi/kineta-20" title="Kineta" description="Kineta" />
+        <siteMapNode url="/betonske-cevi-kanalizacioni-elementi/konus-21" title="Konus" description="Konus" />
+        <siteMapNode url="/betonske-cevi-kanalizacioni-elementi/obloga-kanala-23" title="Obloga kanala" description="Obloga kanala" />
+        <siteMapNode url="/betonske-cevi-kanalizacioni-elementi/poklopna-ploca-24" title="Poklopna ploča" description="Poklopna ploča" />
+        <siteMapNode url="/betonske-cevi-kanalizacioni-elementi/radijalna-opeka-39" title="Radijalna opeka" description="Radijalna opeka" />
+      </siteMapNode>
+      <siteMapNode url="/transportni-beton" title="Transportni beton i agregat" description="Transportni beton i agregat" />
+      <siteMapNode url="/ostalo" title="Ostalo" description="Ostalo">
+        <siteMapNode url="/ostalo/betonski-blok-25" title="Betonski blok" description="Betonski blok" />
+        <siteMapNode url="/ostalo/dunavski-blok-27" title="Dunavski blok" description="Dunavski blok" />
+        <siteMapNode url="/ostalo/korpe-za-otpatke-30" title="Korpe za otpatke" description="Korpe za otpatke" />
+        <siteMapNode url="/ostalo/kugle-i-barikade-29" title="Kugle i barikade" description="Kugle i barikade" />
+        <siteMapNode url="/ostalo/sidel-dimnjak-26" title="Šidel dimnjak" description="Šidel dimnjak" />
+        <siteMapNode url="/ostalo/slivnicka-resetka-28" title="Slivnička rešetka" description="Slivnička rešetka" />
+        <siteMapNode url="/ostalo/blok-temeljni-40" title="Blok temeljni" description="Blok temeljni" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="/delatnosti" title="DELATNOSTI" description="DELATNOSTI" />
+    <siteMapNode url="/projekti" title="PROJEKTI" description="PROJEKTI">
+      <siteMapNode url="/projekti/saobracajnice-i-platoi-agrovet-melenci" title="Saobraćajnice i platoi - Agrovet Melenci" description="Saobraćajnice i platoi - Agrovet Melenci" />
+      <siteMapNode url="/projekti/betonski-prilaz-matijevic-zlatica" title="Betonski prilaz - Matijević - Zlatica" description="Betonski prilaz - Matijević - Zlatica" />
+      <siteMapNode url="/projekti/betoniranje-saobracajnica-uljarice-backa" title="Betoniranje saobraćajnica - Uljarice Bačka" description="Betoniranje saobraćajnica - Uljarice Bačka" />
+      <siteMapNode url="/projekti/zemljani-radovi-matijevic-hetin" title="Sređivanje prilaza - zemljani radovi - Matijević Agrar" description="Sređivanje prilaza - zemljani radovi - Matijević Agrar" />
+      <siteMapNode url="/projekti/podno-skladiste-vojvoda-stepa" title="Podno skladište - Vojvoda Stepa" description="Podno skladište - Vojvoda Stepa" />
+      <siteMapNode url="/projekti/poplocavanje-srbobran" title="Popločavanje Srbobran" description="Popločavanje Srbobran" />
+      <siteMapNode url="/projekti/izrada-platoa-ogrev-zrenjanin" title="Izrada platoa - Ogrev Zrenjanin" description="Izrada platoa - Ogrev Zrenjanin" />
+      <siteMapNode url="/projekti/betonski-radovi-vinex-lukicevo" title="Betonski radovi - Vinex Lukićevo" description="Betonski radovi - Vinex Lukićevo" />
+      <siteMapNode url="/projekti/rekultivacija-lokacija-nis" title="Rekultivacija lokacija - NIS" description="Rekultivacija lokacija - NIS" />
+      <siteMapNode url="/projekti/temelji-silosa-agrovet-melenci" title="Temelji silosa - Agrovet Melenci" description="Temelji silosa - Agrovet Melenci" />
+      <siteMapNode url="/projekti/cehid-poplocavanje" title="Cehid - popločavanje" description="Cehid - popločavanje" />
+      <siteMapNode url="/projekti/izrada-platoa-nis-magacin-elemir" title="Izrada platoa - Nis Magacin Elemir" description="Izrada platoa - Nis Magacin Elemir" />
+    </siteMapNode>
+    <siteMapNode url="/galerija" title="GALERIJA" description="GALERIJA">
+      <siteMapNode url="/galerija/2013" title="2013" description="2013" />
+    </siteMapNode>
+    <siteMapNode url="/kontakt" title="KONTAKT" description="KONTAKT" />
+    <siteMapNode url="/dokumenti" title="DOKUMENTI" description="DOKUMENTI" />
+    <siteMapNode url="/uputstva" title="UPUTSTVA" description="UPUTSTVA">
+      <siteMapNode url="/kako-postaviti-betonske-elemente" title="Kako postaviti betonske elemente" description="Kako postaviti betonske elemente" />
+      <siteMapNode url="/slojevi-tla-za-preopterecenje" title="Slojevi tla za preopterećenje" description="Slojevi tla za preopterećenje" />
+      <siteMapNode url="/seme-polaganja-betonskih-elemenata" title="Šeme polaganja betonskih elemenata" description="Šeme polaganja betonskih elemenata">
+        <siteMapNode url="/seme-polaganja-betonskih-elemenata/behaton" title="Behaton" description="Behaton" />
+        <siteMapNode url="/seme-polaganja-betonskih-elemenata/ploca-10x20" title="Ploča 10x20" description="Ploča 10x20" />
+        <siteMapNode url="/seme-polaganja-betonskih-elemenata/ploca-15x30" title="Ploča 15x30" description="Ploča 15x30" />
+        <siteMapNode url="/seme-polaganja-betonskih-elemenata/ploca-20x20" title="Ploča 20x20" description="Ploča 20x20" />
+        <siteMapNode url="/seme-polaganja-betonskih-elemenata/ploca-20x30" title="Ploča 20x30" description="Ploča 20x30" />
+        <siteMapNode url="/seme-polaganja-betonskih-elemenata/ploca-30x30" title="Ploča 30x30" description="Ploča 30x30" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="/gde-se-nalazimo" title="Gde se nalazimo" description="Gde se nalazimo" />
+  </siteMapNode>
+</siteMap>

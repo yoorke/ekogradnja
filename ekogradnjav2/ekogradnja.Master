@@ -1,0 +1,269 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ekogradnja.master.cs" Inherits="ekogradnjav2.ekogradnja" %>
+<%@ Register Src="userControls/Slider.ascx" TagName="Slider" TagPrefix="Slider" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Ekogradnja - proizvodnja betonske galanterije</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/camera.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin" rel="stylesheet" type="text/css" />
+    <link href="/css/jquery.lightbox-0.5.css" rel="stylesheet" />
+    <%--<link href="/css/bundle.css" rel="stylesheet" />--%>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="fb-root"></div>
+<script type="text/javascript">    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/sr_RS/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+    <form id="form1" runat="server">
+
+        <!--header-->
+        <div id="header" class="margin-top-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img src="/images/logo.jpg" class="img-responsive" alt="Ekogradnja - proizvodnja betonske galanterije"/>
+                    </div>
+                    <div class="col-lg-5 pull-right text-right visible-lg visible-md">
+                        <a href="/sertifikati"><img src="/images/certop-9001.jpg" style="width:100px" /></a>
+                        <a href="/sertifikati"><img src="/images/certop-14001.jpg" style="width:100px" /></a>
+                        <a href="/sertifikati"><img src="/images/certop-18001.jpg" style="width:100px" /></a>
+                        <a href="/sertifikati"><img src="/images/certop-50001.jpg" style="width:100px" /></a>
+                    </div>
+                </div>
+            </div>
+        </div><!--header-->
+        <div id="menu" class="margin-top-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav navbar">
+                                        <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+                                        
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Proizvodni program <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/betonska-galanterija">Betonska galanterija</a></li>
+                                                <li><a href="/ivicnjaci">Ivičnjaci</a></li>
+                                                <li><a href="/rigole-i-kanalete">Rigole i kanalete</a></li>
+                                                <li><a href="/betonske-cevi-kanalizacioni-elementi">Betonske cevi i kanalizacioni elementi</a></li>
+                                                <li><a href="/transportni-beton">Transportni beton i agregat</a></li>
+                                                <li><a href="/ostalo">Ostalo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/delatnosti">Delatnosti</a></li>
+                                        <li><a href="/projekti">Projekti</a></li>
+                                        <%--<li><a href="/galerija">Galerija</a></li>--%>
+                                        
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Uputstva <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/kako-postaviti-betonske-elemente">Kako postaviti betonske elemente</a></li>
+                                                <li><a href="/slojevi-tla-za-preopterecenje">Slojevi tla za preopterećenje</a></li>
+                                                <li><a href="/seme-polaganja-betonskih-elemenata">Šeme polaganja betonskih elemenata</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">O nama <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/o-nama">O nama</a></li>
+                                                <li><a href="/sertifikati">Sertifikati</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="/oprema">Oprema</a></li>
+                                        <li><a href="/kontakt">Kontakt</a></li>
+                                        <li><a href="/gde-se-nalazimo">Gde se nalazimo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="socialIcons">
+                <a href="http://www.facebook.com/EkogradnjaZrenjanin" target="_blank" title="Pronađite nas na Facebook-u">
+                    <img src="/images/facebook.gif" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+        <div id="slider">
+            <div class="container-fluid">
+                <Slider:Slider ID="mainSlider" runat="server" />
+            </div>
+        </div><!--slider-->
+        <div id="content" class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <asp:SiteMapPath runat="server" ID="siteMapPath1" RenderCurrentNodeAsLink="true" />
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div><!--content-->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Uputstva</h3>
+                        <ul>
+                            <li><a href="/kako-postaviti-betonske-elemente">Kako postaviti betonske elemente</a></li>
+                            <li><a href="/slojevi-tla-za-preopterecenje">Slojevi tla za preopterećenje</a></li>
+                            <li><a href="/seme-polaganja-betonskih-elemenata">Šeme polaganja betonskih elemenata</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Delatnosti</h3>
+                        <ul>
+                            <li><a href="/delatnosti#proizvodnja-betonske-galanterije">Proizvodnja betonske galanterije</a></li>
+                            <li><a href="/delatnosti#proizvodnja-transportnog-betona">Proizvodnja transportnog betona</a></li>
+                            <li><a href="/delatnosti#postavljanje-behaton-ploca-i-betonske-galanterije">Postavljanje behaton ploča i betonske galanterije</a></li>
+                            <li><a href="/delatnosti#uredjenje-i-nivelacija-terena">Uređenje i nivelacija terena</a></li>
+                            <li><a href="/delatnosti#izgradnja-poljoprivrednih-objekata">Izgradnja poljoprovrednih objekata</a></li>
+                            <li><a href="/delatnosti#izrada-saobracajnica">Izrada saobraćajnica</a></li>
+                            <li><a href="/delatnosti#izgradnja-spoljnog-vodovoda-i-kanalizacije">Izgradnja spoljnog vodovoda i kanalizacije</a></li>
+                            <li><a href="/delatnosti#transport-rasutog-gradjevinskog-materijala">Transport rasutog građevinskog materijala</a></li>
+                            <li><a href="/delatnosti#sljunkara-i-separacija-sljunka">Šljunkara i separacija šljunka</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footerContact">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h3 class="companyName margin-bottom-0">Ekogradnja doo</h3>
+                                    <h3 class="margin-top-0 margin-bottom-0"><small>Proizvodnja, transport i ugradnja betonske galanterije</small></h3>
+                                    <p class="address margin-top-05">Njegoševa bb</p>
+                                    <p class="address">23270 Melenci</p>
+                                    <p class="email">info@ekogradnja.rs</p>
+                                    <p class="email">www.ekogradnja.rs</p>
+                                    <p class="phone">+381 (0) 23 741 260</p>
+                                    <!--<p class="phone">+381 (0) 63 699 489</p>-->
+                                </div>
+                                <div class="col-md-5">
+                                    
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h3 class="companyName margin-bottom-0">Betonska baza Zrenjanin</h3>
+                                            <h3 class="margin-top-0 margin-bottom-0"><small>Industrijska zona Bagljaš</small></h3>
+                                            <p class="phone">+381 (0) 69 5 333 503</p>
+                                            <p class="phone">+381 (0) 62 669 157</p>
+                                            <p class="phone">+381 (0) 62 639 031</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h3 class="companyName margin-bottom-0">Šljunkara i separacija šljunka</h3>
+                                            <h3 class="margin-top-0 margin-bottom-0"><small>Na obali Tise kod žabaljskog mosta</small></h3>
+                                            <p class="phone">+381 (0) 69 5 333 503</p>
+                                            <p class="phone">+381 (0) 62 669 127</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-certificates">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <!--<a href="/sertifikati"><img src="/images/certop-9001.jpg" /></a>
+                        <a href="/sertifikati"><img src="/images/certop-14001.jpg" /></a>
+                        <a href="/sertifikati"><img src="/images/certop-18001.jpg" /></a>
+                        <a href="/sertifikati"><img src="/images/certop-50001.jpg" /></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="http://www.facebook.com/EkogradnjaZrenjanin" target="_blank">
+                            <img src="/images/facebook-footer.gif" />
+                        </a>
+                        <img src="/images/youtube.gif" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="socialIcons1">
+            
+            
+        </div>
+
+    </form>
+    <script>
+        function downloadJSArOnLoad() {
+            var element = document.createElement("script");
+            element.src = "/js/bundle.js";
+            document.body.appendChild(element);
+
+            //var element1 = document.createElement("script");
+            //element1.src = "/js/jquery.min.js";
+            //document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSArOnLoad, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSArOnLoad);
+        else window.onload = downloadJSArOnLoad;
+    </script>
+    <!--<script src="<%=Page.ResolveUrl("~/js/jquery-1.11.3.min.js") %>"></script>
+    <script src="<%=Page.ResolveUrl("~/js/jquery.min.js") %>"></script>
+    <script>
+        var jquery_1_7_1 = jQuery.noConflict(true);
+    </script>
+    <script src="<%=Page.ResolveUrl("~/js/bootstrap.min.js") %>"></script>
+    <script src="<%=Page.ResolveUrl("~/js/jquery.mobile.customized.min.js") %>"></script>
+    <script src="<%=Page.ResolveUrl("~/js/jquery.easing.1.3.js") %>"></script>
+    <script src="<%=Page.ResolveUrl("~/js/camera.js") %>"></script>
+    <script src="<%=Page.ResolveUrl("~/js/jquery.lightbox-0.5.min.js") %>"></script>
+    <script src="<%=Page.ResolveUrl("~/js/lightBoxStart.js") %>"></script>
+    <script>
+        jquery_1_7_1(function () {
+            jquery_1_7_1('#camera_wrap_1').camera({
+                thumbnails:true
+            })
+        })
+    </script>-->
+    <script type="text/javascript">
+	    (function(i, s, o, g, r, a, m) {
+	        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() {
+	            (i[r].q = i[r].q || []).push(arguments)
+	        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	    ga('create', 'UA-43903898-1', 'ekogradnja.rs');
+	    ga('send', 'pageview');
+
+    </script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

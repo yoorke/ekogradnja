@@ -1,0 +1,29 @@
+[
+  {
+    "outputFileName": "js/bundle.js",
+    "inputFiles": [
+      "js/jquery-1.11.3.min.js",
+      "js/jquery.min.js",
+      "js/jquery-noconflict.js",
+      "js/bootstrap.min.js",
+      "js/jquery.mobile.customized.min.js",
+      "js/jquery.easing.1.3.js",
+      "js/camera.js",
+      "js/jquery.lightbox-0.5.min.js",
+      "js/lightBoxStart.js",
+      "js/camera-start.js",
+      "js/map.js",
+      "js/contactForm.js"
+    ]
+  },
+  {
+    "outputFileName": "css/bundle.css",
+    "inputFiles": [
+      "css/bootstrap.min.css",
+      "css/camera.css",
+      "css/style.css",
+      "css/font-awesome.min.css",
+      "css/jquery.lightbox-0.5.css"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Classes>
+  <Class>
+    <name>slider</name>
+    <get>slider_get</get>
+    <insert>slider_insert</insert>
+    <update>slider_update</update>
+    <delete>slider_delete</delete>
+    <select>slider_select</select>
+  </Class>
+  <Class>
+    <name>sliderItem</name>
+    <get>sliderItem_get</get>
+    <insert>sliderItem_insert</insert>
+    <update>sliderItem_update</update>
+    <delete>sliderItem_delete</delete>
+    <select>sliderItem_select</select>
+    <getItemsBySliderID>sliderItem_getBySliderID</getItemsBySliderID>
+  </Class>
+</Classes>

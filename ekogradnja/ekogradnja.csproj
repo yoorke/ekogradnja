@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B259E1BD-19AA-4F5F-89A9-C73AC2A6B057}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ekogradnja</RootNamespace>
+    <AssemblyName>ekogradnja</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ekogradnjaBE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ekogradnjaBE\bin\Debug\ekogradnjaBE.dll</HintPath>
+    </Reference>
+    <Reference Include="ekogradnjaBL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ekogradnjaBL\bin\Debug\ekogradnjaBL.dll</HintPath>
+    </Reference>
+    <Reference Include="ekogradnjaUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ekogradnjaUtilities\bin\Debug\ekogradnjaUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox, Version=3.3.0.22838, Culture=neutral, PublicKeyToken=5962a4e684a48b87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\asp.net wysiwyg\Framework-3-5\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=2.0.0.9, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Programi\urlrewriter-master\src\bin\Debug\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administrator\page.aspx.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\page.aspx.designer.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="betonska-galanterija.aspx.cs">
+      <DependentUpon>betonska-galanterija.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="betonska-galanterija.aspx.designer.cs">
+      <DependentUpon>betonska-galanterija.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="betonske-cevi-kanalizacioni-elementi.aspx.cs">
+      <DependentUpon>betonske-cevi-kanalizacioni-elementi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="betonske-cevi-kanalizacioni-elementi.aspx.designer.cs">
+      <DependentUpon>betonske-cevi-kanalizacioni-elementi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delatnosti.aspx.cs">
+      <DependentUpon>delatnosti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delatnosti.aspx.designer.cs">
+      <DependentUpon>delatnosti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dokumenti.aspx.cs">
+      <DependentUpon>dokumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dokumenti.aspx.designer.cs">
+      <DependentUpon>dokumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ekogradnja.Master.cs">
+      <DependentUpon>ekogradnja.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ekogradnja.Master.designer.cs">
+      <DependentUpon>ekogradnja.Master</DependentUpon>
+    </Compile>
+    <Compile Include="galerija.aspx.cs">
+      <DependentUpon>galerija.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="galerija.aspx.designer.cs">
+      <DependentUpon>galerija.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ivicnjaci.aspx.cs">
+      <DependentUpon>ivicnjaci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ivicnjaci.aspx.designer.cs">
+      <DependentUpon>ivicnjaci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kako-postaviti-betonske-elemente.aspx.cs">
+      <DependentUpon>kako-postaviti-betonske-elemente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kako-postaviti-betonske-elemente.aspx.designer.cs">
+      <DependentUpon>kako-postaviti-betonske-elemente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kontakt.aspx.cs">
+      <DependentUpon>kontakt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kontakt.aspx.designer.cs">
+      <DependentUpon>kontakt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="o-nama.aspx.cs">
+      <DependentUpon>o-nama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="o-nama.aspx.designer.cs">
+      <DependentUpon>o-nama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ostalo.aspx.cs">
+      <DependentUpon>ostalo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ostalo.aspx.designer.cs">
+      <DependentUpon>ostalo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page.aspx.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page.aspx.designer.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="proizvod.aspx.cs">
+      <DependentUpon>proizvod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="proizvod.aspx.designer.cs">
+      <DependentUpon>proizvod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodni-program.aspx.cs">
+      <DependentUpon>proizvodni-program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="proizvodni-program.aspx.designer.cs">
+      <DependentUpon>proizvodni-program.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projekat.aspx.cs">
+      <DependentUpon>projekat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projekat.aspx.designer.cs">
+      <DependentUpon>projekat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projekti.aspx.cs">
+      <DependentUpon>projekti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projekti.aspx.designer.cs">
+      <DependentUpon>projekti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rigole-i-kanalete.aspx.cs">
+      <DependentUpon>rigole-i-kanalete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rigole-i-kanalete.aspx.designer.cs">
+      <DependentUpon>rigole-i-kanalete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="seme-polaganja-betonskih-elemenata.aspx.cs">
+      <DependentUpon>seme-polaganja-betonskih-elemenata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="seme-polaganja-betonskih-elemenata.aspx.designer.cs">
+      <DependentUpon>seme-polaganja-betonskih-elemenata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="slojevi-tla-za-preopterecenje.aspx.cs">
+      <DependentUpon>slojevi-tla-za-preopterecenje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="slojevi-tla-za-preopterecenje.aspx.designer.cs">
+      <DependentUpon>slojevi-tla-za-preopterecenje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transportni-beton.aspx.cs">
+      <DependentUpon>transportni-beton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transportni-beton.aspx.designer.cs">
+      <DependentUpon>transportni-beton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uputstva.aspx.cs">
+      <DependentUpon>uputstva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uputstva.aspx.designer.cs">
+      <DependentUpon>uputstva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uslovi-prodaje.aspx.cs">
+      <DependentUpon>uslovi-prodaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uslovi-prodaje.aspx.designer.cs">
+      <DependentUpon>uslovi-prodaje.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\global.css" />
+    <Content Include="css\style.css" />
+    <Content Include="ekogradnja.Master" />
+    <Content Include="images\4695cb3b19cbf906e45dac0da0913068_S.jpg" />
+    <Content Include="images\83c2446a0896df0a1f4af01c940ae1d9_L.jpg" />
+    <Content Include="images\arrow-next.png" />
+    <Content Include="images\arrow-prev.png" />
+    <Content Include="images\background.png" />
+    <Content Include="images\be28adfff47893c4519c1307dc6b8866_L.jpg" />
+    <Content Include="images\behaton_360x209_c0176cf2fd5d403a6b69f421c1d83754.jpg" />
+    <Content Include="images\bet. baza.jpg" />
+    <Content Include="images\deu.jpg" />
+    <Content Include="images\eng.jpg" />
+    <Content Include="images\example-frame.png" />
+    <Content Include="images\facebook.jpg" />
+    <Content Include="images\Facebook.png" />
+    <Content Include="images\house.jpg" />
+    <Content Include="images\katalog.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\new-ribbon.png" />
+    <Content Include="images\pagination.png" />
+    <Content Include="images\ploca 3030.jpg" />
+    <Content Include="images\ploca-3030_360x226_f53ce142949a4fd1aba9f672ec3feea9.jpg" />
+    <Content Include="images\ploca1020_360x247_f6ab9191abe33b9de5618dca671513bc.jpg" />
+    <Content Include="images\ploca1530_360x261_bce6a089c8426e4f93e23e75321d0092.jpg" />
+    <Content Include="images\ploca2020_360x275_086c641bad068ca37f176e2c2a6846f2.jpg" />
+    <Content Include="images\ploca2030_360x237_480980c076a201d8491e469ebdc9504d.jpg" />
+    <Content Include="images\raster.jpg" />
+    <Content Include="images\slide-1.jpg" />
+    <Content Include="images\slide-2.jpg" />
+    <Content Include="images\slide-3.jpg" />
+    <Content Include="images\slide-4.jpg" />
+    <Content Include="images\slide-5.jpg" />
+    <Content Include="images\slide-6.jpg" />
+    <Content Include="images\slide-7.jpg" />
+    <Content Include="images\slide.jpg" />
+    <Content Include="images\slider2.jpg" />
+    <Content Include="images\slider3.jpg" />
+    <Content Include="images\socialicons.jpg" />
+    <Content Include="images\srb.jpg" />
+    <Content Include="images\twitter.jpg" />
+    <Content Include="images\Twitter.png" />
+    <Content Include="images\vertikalna.png" />
+    <Content Include="images\youtube.jpg" />
+    <Content Include="images\YouTube.png" />
+    <Content Include="js\slides.min.jquery.js" />
+    <Content Include="proizvod.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="administrator\page.aspx" />
+    <Content Include="App_Browsers\Form.browser" />
+    <Content Include="App_Code\FormRewriter.vb" />
+    <Content Include="betonska-galanterija.aspx" />
+    <Content Include="betonske-cevi-kanalizacioni-elementi.aspx" />
+    <Content Include="css\highslide.css" />
+    <Content Include="css\highslide.minified.css" />
+    <Content Include="delatnosti.aspx" />
+    <Content Include="dokumenti.aspx" />
+    <Content Include="galerija.aspx" />
+    <Content Include="ivicnjaci.aspx" />
+    <Content Include="kako-postaviti-betonske-elemente.aspx" />
+    <Content Include="kontakt.aspx" />
+    <Content Include="o-nama.aspx" />
+    <Content Include="ostalo.aspx" />
+    <Content Include="page.aspx" />
+    <Content Include="proizvodni-program.aspx" />
+    <Content Include="projekat.aspx" />
+    <Content Include="projekti.aspx" />
+    <Content Include="seme-polaganja-betonskih-elemenata.aspx" />
+    <Content Include="slojevi-tla-za-preopterecenje.aspx" />
+    <Content Include="transportni-beton.aspx" />
+    <Content Include="uputstva.aspx" />
+    <Content Include="uslovi-prodaje.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\global.min.css" />
+    <Content Include="css\style.min.css" />
+    <Content Include="css\style_min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rigole-i-kanalete.aspx" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="en\" />
+    <Folder Include="sr\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50360</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
